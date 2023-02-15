@@ -32,8 +32,8 @@ Users are able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-newspaper-homepage-with-sass-and-flexbox-Gv8R58_31L)
+- Live Site URL: [Live site](https://marijanasevo.github.io/news-homepage/)
 
 ## My process
 
