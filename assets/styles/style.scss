@@ -397,7 +397,7 @@ nav ul a {
 .num-articles {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 3rem;
   margin-bottom: 5rem;
 
   @include breakpoint-min(medium) {
