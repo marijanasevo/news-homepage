@@ -117,7 +117,7 @@ img {
   @include breakpoint-min(large) {
     padding: 0;
     margin-inline: auto;
-    width: min(91%, 1150px);
+    width: min(91%, 1050px);
   }
 }
 
@@ -127,10 +127,10 @@ img {
 
 header {
   font-size: 1.5rem;
-  padding: 30px 0 30px;
+  margin: 30px 0 30px;
 
   @include breakpoint-min(medium) {
-    padding: 80px 0 50px;
+    margin: 100px 0 50px;
   }
 }
 
@@ -264,8 +264,8 @@ nav ul a {
 
 .featured {
   display: flex;
-  gap: 25px;
-  margin-bottom: 6rem;
+  gap: 1.5rem;
+  margin-bottom: 7rem;
 
   @include breakpoint-max(large) {
     flex-flow: column;
@@ -280,7 +280,7 @@ nav ul a {
 .main-article { 
   @include breakpoint-min(medium) {
     // main is 2x wider than aside
-    flex: 2;
+    flex: 2.5;
   }
 
   &__img {
@@ -296,9 +296,9 @@ nav ul a {
   }
 
   &__title  {
-    font-size: clamp(4rem, 2.3vw + 2.2rem, 5.3rem);
-    line-height: clamp(4rem, 2.3vw + 2.2rem, 5.3rem);
-    margin: 15px 15px 0 0;
+    font-size: clamp(4rem, 2.3vw + 2.2rem, 5.5rem);
+    line-height: clamp(4rem, 2.3vw + 2.2rem, 5.7rem);
+    margin: 1.5rem 1.5rem 0 0;
 
     a:hover { color: var(--very-dark-blue) }
 
@@ -394,7 +394,7 @@ nav ul a {
 .num-articles {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
   margin-bottom: 50px;
 
   @include breakpoint-min(medium) {
@@ -417,7 +417,7 @@ nav ul a {
 
   // wide screen articles side by side
   @media (min-width: 1200px) {
-    flex-basis: 30%;
+    flex-basis: 32.6%;
   }
 }
 
@@ -427,7 +427,7 @@ nav ul a {
   gap: 5%;
 
   &__image {
-    height: 15rem;
+    height: 13rem;
     align-self: center;
   }
 
@@ -439,7 +439,7 @@ nav ul a {
 
   &__number {
     font-weight: bolder;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--grayish-blue);
   }
 
