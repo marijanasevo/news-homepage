@@ -118,7 +118,7 @@ img {
   @include breakpoint-min(large) {
     padding: 0;
     margin-inline: auto;
-    width: min(91%, 105rem);
+    width: min(91%, 110rem);
   }
 }
 
@@ -213,7 +213,6 @@ header {
   transform: rotate((-45deg)) translate(35px, 35px);
 }
 
-
 /*
 * Navigation menu links
 ***********************/
@@ -266,7 +265,7 @@ nav ul a {
 
 .featured {
   display: flex;
-  gap: 1.5rem;
+  gap: 3rem;
   margin-bottom: 7rem;
 
   @include breakpoint-max(large) {
@@ -345,7 +344,7 @@ nav ul a {
 *************************/
 
 .side {
-  padding: 3rem 2rem;
+  padding: 3rem 2.5rem;
   
   @include breakpoint-min(medium) {
     // main is 2x wider than aside
