@@ -13,6 +13,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
+    - [Optimizations](#optimizations)
   - [Author](#author)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
@@ -53,6 +54,12 @@ Learned more about responsive typography and some newer CSS functions:
 ```css
 font-size: clamp(4rem, 2.3vw + 2.2rem, 5.3rem);
 ```
+
+### Optimizations
+
+Animation could be optimized in case someone tries to tweak by resizing the browser window. There is a small animation caused by toggling the class while resizing the window and passing the mobile interface breakpoint. _I like it because it adds the effect that menu changed its form._ 
+
+I talked to a SEO person, and they said older folks might have trouble figuring out hamburger menus or even recognizing it so maybe this animation could be helpful and attract their attention.
 
 
 ## Author
