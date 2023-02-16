@@ -4,9 +4,8 @@ const body = document.body;
 const featured = document.querySelector('.featured');
 const menuBtn = document.querySelector('.nav__menu-button');
 const menuList = document.querySelector('.nav__menu');
-
-let darkOverlay = document.createElement('div');
-darkOverlay.className = 'dark-overlay';
+const overlay = document.querySelector('.overlay');
+console.log(overlay);
 
 let scrollbarWidth = (window.innerWidth - document.body.clientWidth) + 'px';
 
@@ -15,17 +14,16 @@ function toggleMenu() {
   menuBtn?.classList.toggle('open-menu');
   // prevent scrolling
   body.classList.toggle('stop-scrolling');
+  // add dark overlay behind
+  overlay.classList.toggle('overlay-hidden');
 
   if (menuBtn?.classList.contains('open-menu')) {
     // When scroll is removed, prevent content from jumping
     // to fill in the space
     featured.style.marginRight = scrollbarWidth;
-    // and add dark overlay behind the menu
-    body.append(darkOverlay);
   } else {
+    // otherwise remove margin
     featured.style.marginRight = '';
-    // otherwise remove margin and overlay
-    darkOverlay.remove();
   }
 }
 
@@ -39,5 +37,5 @@ function toggleMobileClass() {
 
 toggleMobileClass();
 menuBtn.addEventListener('click', toggleMenu);
-darkOverlay.addEventListener('click', toggleMenu);
+overlay?.addEventListener('click', toggleMenu);
 window.addEventListener('resize', toggleMobileClass);

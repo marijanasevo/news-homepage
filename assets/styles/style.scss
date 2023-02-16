@@ -96,14 +96,23 @@ img {
   overflow: hidden;
 }
 
-.dark-overlay {
-  background: hsla(236, 41%, 7%, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 5;
+// dark overlay behind mobile menu
+.overlay {
+
+  @include breakpoint-max(medium) {
+    display: block;
+    background: hsla(236, 41%, 7%, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+  }
+
+  &-hidden {
+    display: none;
+  }
 }
 
 /*
@@ -280,7 +289,7 @@ nav ul a {
 
 .main-article { 
   @include breakpoint-min(medium) {
-    // main is 2x wider than aside
+    // main is 2.5x wider than aside
     flex: 2.5;
   }
 
