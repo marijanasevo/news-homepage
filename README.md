@@ -57,9 +57,9 @@ font-size: clamp(4rem, 2.3vw + 2.2rem, 5.3rem);
 
 ### Optimizations
 
-Animation could be optimized in case someone tries to tweak by resizing the browser window. There is a small animation caused by toggling the class while resizing the window and passing the mobile interface breakpoint. _I like it because it adds the effect that menu changed its form._ 
+There is a small animation that could be optimized. It's caused by toggling the class while resizing the window and passing the mobile interface breakpoint. _I like it because it adds the effect that menu changed its form._ 
 
-I talked to a SEO person, and they said older folks might have trouble figuring out hamburger menus or even recognizing it so maybe this animation could be helpful and attract their attention.
+A SEO person told me once that older people might have trouble figuring out hamburger menus or even recognizing it so maybe this animation could be helpful and attract their attention. It's not a bug, it's a feature.
 
 
 ## Author
