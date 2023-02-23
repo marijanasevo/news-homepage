@@ -16,8 +16,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
     - [Optimizations](#optimizations)
   - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -60,7 +58,6 @@ font-size: clamp(4rem, 2.3vw + 2.2rem, 5.3rem);
 There is a small animation that could be optimized. It's caused by toggling the class while resizing the window and passing the mobile interface breakpoint. _I like it because it adds the effect that menu changed its form._ 
 
 A SEO person told me once that older people might have trouble figuring out hamburger menus or even recognizing it so maybe this animation could be helpful and attract their attention. It's not a bug, it's a feature.
-
 
 ## Author
 
