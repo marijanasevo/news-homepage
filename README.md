@@ -50,7 +50,18 @@ I practiced Sass, its functions, how partials could be organized and BEM in this
 
 Learned more about responsive typography and some newer CSS functions: 
 ```css
+/*         clamp(min, prefered and a maximum value) */
 font-size: clamp(4rem, 2.3vw + 2.2rem, 5.3rem);
+
+/**
+  Magic formulas that will take responsivness to the moon 
+  https://vayo.hashnode.dev/how-to-make-websites-responsive-for-all-devices
+*/
+
+p { font-size: min(6vmin, calc(1rem + 0.23vmax), 2rem); }
+
+/* Headings might require min (7.5vmin) and prefered value (2rem) tweaking to adjust */
+h1 { font-size: min(7.5vmin, calc(2rem + 1.2vmax)); }
 ```
 
 ### Optimizations
